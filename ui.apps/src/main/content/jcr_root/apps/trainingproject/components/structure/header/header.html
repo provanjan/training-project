@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="site-identity">
+    <h1><a href="#">Site Name</a></h1>
+  </div>  
+  <nav class="site-navigation">
+    <ul class="nav">
+      <li><a href="#">About</a></li> 
+      <li><a href="#">News</a></li> 
+      <li><a href="#">Contact</a></li> 
+    </ul>
+  </nav>
+</header>
+
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='vote.header'}"/>
+<sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>

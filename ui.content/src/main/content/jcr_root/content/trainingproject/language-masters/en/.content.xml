@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-04-16T22:08:53.573+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/trainingproject/settings/wcm/templates/vote-content-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="English"
+        sling:resourceType="trainingproject/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:created="{Date}2023-04-12T10:28:14.993+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-04-12T10:28:32.637+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <pagehero
+                jcr:lastModified="{Date}2023-04-16T22:08:53.433+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="The Great American Democracy"
+                sling:resourceType="trainingproject/components/structure/pagehero"
+                buttonLabel="Vote Now"
+                fileName="pexels-element-digital-1550340.jpg"
+                heading="Every vote counts">
+                <file/>
+            </pagehero>
+        </root>
+    </jcr:content>
+    <home-page/>
+    <test-page/>
+</jcr:root>

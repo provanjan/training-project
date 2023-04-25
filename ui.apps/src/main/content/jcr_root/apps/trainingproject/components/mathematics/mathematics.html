@@ -1,0 +1,34 @@
+
+
+
+
+<label for="firstNumber">First Number:</label><br>
+<input type="number" id="fNumber"  ><br>
+<label for="secondNumber">Second Number:</label><br>
+<input type="number" id="sNumber"><br><br>
+<button type="button" id="getValBtnID">  Addition </button>
+
+<label id="lblName">
+
+</label>
+
+<script>
+$("#getValBtnID").click(function () {
+                var firstNumber = $("#fNumber").val();
+
+                 var secondNumber = $("#sNumber").val();
+
+var formdata = {"firstNumber":firstNumber,"secondNumber":secondNumber};
+$.ajax({
+type: "POST", url: "/bin/postservletexample",
+data: { load: JSON.stringify(formdata) },
+cache: false,
+success: function(data){
+alert("Success: "+JSON.stringify(data));
+},
+error: function(data){
+alert("Success: "+JSON.stringify(data));
+}
+});
+            });
+</script>
