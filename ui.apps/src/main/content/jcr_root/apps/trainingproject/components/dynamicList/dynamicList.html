@@ -1,0 +1,7 @@
+<div data-sly-use.dynamicList="${'com.trainingproject.core.models.DynamicList' @ listPath='/content/training/us/en/practice-page' }">
+    <ul>
+        <li data-sly-repeat="${dynamicList.pg}">
+            <a href="${item.path @ extension='html'}">${item.title}</a>
+        </li>
+    </ul>
+</div>
