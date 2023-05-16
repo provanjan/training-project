@@ -1,0 +1,21 @@
+<style>
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+
+</style>
+
+
+<sly data-sly-use.logoModel="com.trainingproject.core.models.LogoModel" >
+
+<div class="logo">
+    <img src="${logoModel.imageUrl}" alt="${logoModel.alternativeText}" />
+</div>
+</sly>
