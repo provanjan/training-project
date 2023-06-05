@@ -1,1 +1,7 @@
+<sly data-sly-resource="${@ resourceType='trainingproject/components/structure/header', selectors='include'}"></sly>
+
 <h1>This is static template example </h1>
+
+<sly data-sly-include="/libs/wcm/core/components/init/init.jsp" />
+
+ <div data-sly-resource="${'content' @ resourceType='wcm/foundation/components/parsys'}"></div>
